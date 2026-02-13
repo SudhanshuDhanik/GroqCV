@@ -15,11 +15,15 @@ function App() {
     setGeneratedResume(null);
 
     try {
-      const res = await fetch("http://localhost:8080/resume/generate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(resumeData),
-      });
+      const res = await fetch(
+        `${import.meta.env.VITE_API_URL}/resume/generate`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(resumeData),
+        }
+      );
+
 
       const data = await res.json();
       setGeneratedResume(data);
