@@ -1,0 +1,78 @@
+/* Full-screen semi-transparent overlay */
+.loader-overlay {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 18, 30, 0.55);
+  z-index: 9999;
+  pointer-events: all;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+/* Small centered card so only a compact UI is shown */
+.loader-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 24px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  min-width: 260px;
+  transform: translateY(-10px);
+}
+
+/* The ring of dots */
+.loader-ring {
+  display: grid;
+  grid-template-columns: repeat(4, 14px);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* dot look */
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ff9a00, #ff5722);
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.35);
+  transform: translateY(0);
+  animation: lift 0.7s ease-in-out infinite;
+}
+
+/* staggered delays for "crazy" motion */
+.dot1 { animation-delay: 0s; }
+.dot2 { animation-delay: 0.12s; }
+.dot3 { animation-delay: 0.24s; }
+.dot4 { animation-delay: 0.36s; }
+
+/* animation: lift & slight scale */
+@keyframes lift {
+  0%   { transform: translateY(0) scale(1); opacity: 0.9; }
+  50%  { transform: translateY(-14px) scale(1.18); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 0.9; }
+}
+
+/* Glowing text */
+.loader-text {
+  color: #ffffff;
+  font-family: "Poppins", "Inter", Arial, sans-serif;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(255, 87, 34, 0.18);
+}
+
+/* smaller on phones */
+@media (max-width: 420px) {
+  .loader-card { padding: 12px 16px; min-width: 200px; }
+  .loader-text { font-size: 13px; }
+  .dot { width: 12px; height: 12px; }
+}

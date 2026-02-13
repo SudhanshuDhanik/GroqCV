@@ -1,0 +1,56 @@
+.resume2-container {
+  width: 80%;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  color: #111;
+  font-size: 14px;
+}
+
+.resume2-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume2-header h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: #002b5c;
+}
+
+.resume2-contact a {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.resume2-contact {
+  font-size: 14px;
+}
+
+section {
+  margin-top: 20px;
+}
+
+section h2 {
+  color: #0047ab;
+  font-size: 18px;
+  border-bottom: 2px solid #0047ab;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills-grid span {
+  background: #f0f5ff;
+  border: 1px solid #0047ab;
+  padding: 4px 10px;
+  border-radius: 5px;
+}

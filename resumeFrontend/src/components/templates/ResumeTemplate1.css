@@ -1,0 +1,149 @@
+/* Container to center the preview */
+.template-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.download-section {
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: #e68900;
+}
+
+/* --- The Resume Paper (A4 Style) --- */
+.resume-paper {
+  background-color: #ffffff; /* Always white for PDF */
+  color: #000000;            /* Always black text */
+  width: 8.5in;              /* Standard Letter width */
+  min-height: 11in;
+  padding: 0.5in;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Header */
+.resume-header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.resume-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-info {
+  font-size: 14px;
+  color: #444;
+}
+
+.contact-info a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Sections */
+.resume-section {
+  margin-bottom: 18px;
+}
+
+.section-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+/* Content Typography */
+p, li {
+  font-size: 14px; /* Standard readable size */
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Experience & Projects */
+.experience-item, .project-item, .education-item {
+  margin-bottom: 12px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.item-title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.item-date {
+  font-style: italic;
+  font-size: 13px;
+  color: #555;
+}
+
+.item-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 3px;
+  color: #444;
+}
+
+.tech-stack {
+  font-size: 13px;
+  font-weight: normal;
+  color: #666;
+  margin-left: 10px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: #f0f0f0;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+}
+
+/* Achievements */
+.achievements-list {
+  padding-left: 18px;
+  margin-top: 5px;
+}
+
+.achievements-list li {
+  margin-bottom: 4px;
+}
