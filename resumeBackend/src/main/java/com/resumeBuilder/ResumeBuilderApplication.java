@@ -27,7 +27,6 @@ public class ResumeBuilderApplication {
 	}
 	@PostConstruct
 	public void check() {
-		System.out.println("API KEY = " + apiKey);
 		System.out.println("TEST VALUE = " + test);
 	}
 }
