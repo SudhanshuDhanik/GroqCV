@@ -108,7 +108,7 @@ const ResumeForm = ({ onSubmit }) => {
       {/* ADDED: onKeyDown handler to prevent accidental submission */}
       <form onSubmit={handleSubmit} onKeyDown={handleKeyDown} className="resume-card">
         {/* Logo and Title */}
-        <h1 className="form-title anim-group">💎 GemAI CV</h1>
+        <h1 className="form-title anim-group">💎 GroqAI CV</h1>
 
         <div className="form-section anim-group">
           <h2>Basic Details</h2>
